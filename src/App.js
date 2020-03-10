@@ -1,15 +1,18 @@
-import React from "react";
-import "./App.css";
-import A from "./components/A";
-import B from "./components/B";
+import React from 'react';
+import './App.css';
+import Form from './components/Form';
+import { Provider } from 'react-redux';
+import configureStore from './store/configureStore';
+const store = configureStore();
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <A />
-      <B />
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <Form />
+      </div>
+    </Provider>
   );
-}
+};
 
 export default App;
