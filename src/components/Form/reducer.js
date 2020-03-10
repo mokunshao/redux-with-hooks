@@ -1,9 +1,9 @@
-import { reducerCreator } from "../../store/reducerCreator";
-import { TYPES } from "./aciton";
+import { reducerCreator } from '../../store/reducerCreator';
+import { TYPES } from './aciton';
 
 const initialState = {
-  tel: "",
-  name: "",
+  name: '',
+  tel: '',
 };
 
 export default reducerCreator(TYPES, initialState);

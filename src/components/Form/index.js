@@ -8,14 +8,20 @@ export const Form = () => {
   const dispatch = useDispatch();
   return (
     <div>
-      <input
-        value={form.name}
-        onChange={e => dispatch(updateName(e.target.value))}
-      />
-      <input
-        value={form.tel}
-        onChange={e => dispatch(updateTel(e.target.value))}
-      />
+      <div>
+        <span>name: </span>
+        <input
+          value={form.name}
+          onChange={e => dispatch(updateName(e.target.value))}
+        />
+      </div>
+      <div>
+        <span>tel: </span>
+        <input
+          value={form.tel}
+          onChange={e => dispatch(updateTel(e.target.value))}
+        />
+      </div>
     </div>
   );
 };
