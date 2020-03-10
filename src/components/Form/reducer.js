@@ -1,4 +1,4 @@
-import { reducerCreator } from '../../store/reducerCreator';
+import { reducerCreator } from '../../utils/reducerCreator';
 import { TYPES } from './aciton';
 
 const initialState = {
